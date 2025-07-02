@@ -1,4 +1,4 @@
-from ocr_utils import extract_text_from_image, extract_text_from_pdf
+from ocr_utils import extract_image, extract_pdf
 
 def main():
     #get file for now
@@ -6,9 +6,9 @@ def main():
 
     #check file extension to use different function
     if path.lower().endswith(".pdf"):
-        text = extract_text_from_pdf(path)
+        text = extract_pdf(path)
     elif path.lower().endswith((".jpg", ".jpeg", ".png")):
-        text = extract_text_from_image(path)
+        text = extract_image(path)
     else:
         print("Unsupported file type.")
         return

@@ -1,4 +1,11 @@
+#OCR Parser
 from ocr_utils import extract_image, extract_pdf
+#OpenAI Document identifier agent
+#need to add
+#OpenAI Document identifier number 2 to make sure it is correct
+#NEED TO ADD
+#One More Agent to have covo with to ask contents of the document and what is possible to do with this
+#need to add
 
 def main():
     #get file for now

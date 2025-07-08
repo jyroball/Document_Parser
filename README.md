@@ -6,7 +6,7 @@ Need to upload document manualy into a directory.
 
 Run with:
 
-python main.py
+    python main.py
 
 Then input file directory, example:
 

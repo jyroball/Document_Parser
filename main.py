@@ -5,7 +5,7 @@ from classify import classify_document
 #OpenAI Document identifier number 2 to make sure it is correct
 #NEED TO ADD
 #One More Agent to have covo with to ask contents of the document and what is possible to do with this
-#need to add
+from assistant import document_assistant
 
 #add json for classification output
 import json
@@ -44,6 +44,13 @@ def main():
     #create a json file to store data in
     with open("documents.json", "w", encoding = "utf-8") as f:
             json.dump(document_data, f, indent = 2)
+
+    #before asking maybe make another agent to make sure the classifier was correct?
+
+    #after storing we can ask another agent what we can do
+
+
+
 
 if __name__ == "__main__":
     main()

@@ -47,9 +47,18 @@ def main():
 
     #before asking maybe make another agent to make sure the classifier was correct?
 
-    #after storing we can ask another agent what we can do
+    #after storing we can ask another agent what we can do with the document
+    print("\n\nDocument Assitant:\n\n")
 
-
+    #loop to keep asking or prompting agent with a quesiton about the doc
+    while 1:
+        #ask for user prompt
+        question = input("\nAsk a question about the document provided (or 'quit'/'exit'): ")
+        if question.lower() in ("quit", "exit"):
+             break
+        #output agent response
+        print("\nAnswer:\n")
+        print(document_assistant(question))
 
 
 if __name__ == "__main__":

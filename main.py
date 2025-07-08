@@ -7,6 +7,9 @@ from classify import classify_document
 #One More Agent to have covo with to ask contents of the document and what is possible to do with this
 #need to add
 
+#add json for classification output
+import json
+
 def main():
     #get file for now
     path = input("Enter path to your document (PDF or JPG): ").strip()

@@ -16,7 +16,7 @@ def classify_document(text):
         #prompt for behavior
         SystemMessage(content = "You are document classifier that can distinguish between different government type documents."),
         #prompt for question to llm
-        HumanMessage(content = f"Given this document:\n\n{text}\n\n Can you tell me what type of government type document this is? I would like to keep the response simple, keep it to a single word to tell me what type of form this is or type of document this is. Example of such is 'Form_8843', 'Passport', W-2_Form', etc. Please keep the response similar to the example, thank you.")
+        HumanMessage(content = f"Given this document:\n\n{text}\n\n Can you tell me what type of government type document this is? I would like to keep the response simple, respond with a specific form name like 'W-2', 'I-130', 'DS-11', 'Passport' etc. or say 'Unknown'.")
     ]
 
     #sends prompt qeustions to llm using langcahin
